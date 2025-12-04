@@ -15,28 +15,25 @@
     </properties>
 
     <dependencies>
+        <!-- Ingrédient 1 : Les contrôles JavaFX (Boutons, Tableaux...) -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>21.0.6</version>
+            <version>17.0.6</version>
         </dependency>
+
+        <!-- Ingrédient 2 : Le moteur FXML (Pour lire tes fichiers .fxml) -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>21.0.6</version>
+            <version>17.0.6</version>
         </dependency>
 
+        <!-- Ingrédient 3 : Le pilote pour MySQL (Pour la base de données) -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.2.0</version>
         </dependency>
     </dependencies>
 
