@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #f4f4f4;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="general.niveauMenuController">
+
+    <!-- Icône User en haut à droite -->
+    <VBox alignment="CENTER" spacing="5" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <Button fx:id="user" contentDisplay="TOP" mnemonicParsing="false" prefHeight="50.0" prefWidth="54.0" style="-fx-background-radius: 50; -fx-background-color: Grey;" textAlignment="CENTER" />
+        <Label fx:id="userName" text="Joueur" textFill="#666666">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+    </VBox>
+
+    <!-- Conteneur Central pour le Menu -->
+    <VBox alignment="CENTER" layoutX="14.0" layoutY="-8.0" spacing="20.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-14.0" AnchorPane.topAnchor="-8.0">
+      <Label text="SNAKE GAME">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+        
+        <!-- Titre -->
+        <Label text="MENU">
+            <font>
+                <Font name="System Bold" size="48.0" />
+            </font>
+        </Label>
+
+        <Separator prefWidth="200.0" visible="false" />
+        <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+            <Button fx:id="niveau1" alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="100.0" style="-fx-font-size: 16px; -fx-background-radius: 20;" text="Niveau 1" />
+            <Button fx:id="niveau2" alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="100.0" style="-fx-font-size: 16px; -fx-background-radius: 20;" text="Niveau 2" />
+            <Button fx:id="niveau3" alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="100.0" style="-fx-font-size: 16px; -fx-background-radius: 20;" text="Niveau 3" />
+        </HBox>
+
+        <Separator prefWidth="200.0" visible="false" /> <!-- Espaceur -->
+
+        <!-- Bouton Quitter -->
+        <Button fx:id="quitter" prefWidth="150.0" style="-fx-background-color: #ff5555; -fx-background-radius: 5; -fx-font-weight: bold;" text="Quitter le jeu" textFill="WHITE" />
+        
+    </VBox>
+
+</AnchorPane>
