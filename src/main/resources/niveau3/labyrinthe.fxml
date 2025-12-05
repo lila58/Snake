@@ -10,4 +10,6 @@
    <Label fx:id="scoreLabel" layoutX="39.0" layoutY="421.0" text="Score" />
    <Button fx:id="pause" layoutX="30.0" layoutY="388.0" mnemonicParsing="false" text="Pause" />
    <Button fx:id="out" layoutX="27.0" layoutY="760.0" mnemonicParsing="false" text="Quitter la partie" />
+
+
 </AnchorPane>
